@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Github, Mail } from "lucide-react";
+// Removed unused icon imports to fix lint errors
 import footerContent from './content/en/footer';
 
 const Footer = () => (

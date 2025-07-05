@@ -1,20 +1,20 @@
 import {
-    ArrowRight,
+    
     Code,
     Users,
     CheckCircle,
     Rocket,
     GitBranch,
     Coffee,
-    Download,
+    
     Zap,
     Shield,
     Database,
     Palette,
     MessageCircle,
-    ExternalLink,
-    Heart,
-    Terminal,
+    
+    
+    
     FileText,
     Settings,
     Bug,
