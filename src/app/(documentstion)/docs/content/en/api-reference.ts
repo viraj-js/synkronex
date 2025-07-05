@@ -1,23 +1,41 @@
 const apiReferenceContent = {
-  title: "API Reference",
-  description: "Comprehensive details about all available API endpoints, request/response formats, and authentication.",
+  hero: {
+    badge: "API Reference",
+    title: "Synkronex API Reference",
+    description: "Explore the REST API endpoints for integrating with Synkronex. Find details on routes, parameters, and response formats below.",
+  },
   endpoints: [
     {
-      name: "GET /api/projects",
+      method: "GET",
+      path: "/api/projects",
       description: "Retrieve a list of all projects.",
-      params: ["Authorization header (JWT)"]
     },
     {
-      name: "POST /api/projects",
+      method: "POST",
+      path: "/api/projects",
       description: "Create a new project.",
-      params: ["Authorization header (JWT)", "project name (string)"]
     },
     {
-      name: "GET /api/tasks",
+      method: "GET",
+      path: "/api/tasks",
       description: "Retrieve all tasks for a project.",
-      params: ["Authorization header (JWT)", "projectId (string)"]
-    }
-  ]
+    },
+    {
+      method: "POST",
+      path: "/api/tasks",
+      description: "Create a new task in a project.",
+    },
+    {
+      method: "PATCH",
+      path: "/api/tasks/:id",
+      description: "Update a specific task.",
+    },
+    {
+      method: "DELETE",
+      path: "/api/tasks/:id",
+      description: "Delete a specific task.",
+    },
+  ],
 };
 
 export default apiReferenceContent;

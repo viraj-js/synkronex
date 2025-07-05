@@ -24,15 +24,16 @@ export default function TaskManagerDocs() {
 
     return (
         <main className="min-h-screen bg-background">
+    {/* Responsive padding for all sections */}
             {/* Hero Section */}
-            <section className="relative py-16 sm:py-20 px-2 sm:px-4 text-center overflow-hidden">
+            <section className="relative py-12 sm:py-20 px-4 sm:px-6 text-center overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/5 to-green-500/10"></div>
                 <div className="relative z-10 max-w-4xl mx-auto">
                     <Badge variant="secondary" className="mb-4">
                         <Heart className="w-3 h-3 mr-1 text-red-500" />
                         {content.hero.badge}
                     </Badge>
-                    <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent break-words">
                         {content.hero.title}
                     </h1>
                     <p className="text-lg sm:text-2xl md:text-3xl font-semibold mb-6 text-muted-foreground">
@@ -81,7 +82,7 @@ export default function TaskManagerDocs() {
                     <p className="text-muted-foreground text-lg">{content.quickStart.subtitle}</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
                     {content.quickStart.steps.map((step, index) => (
                         <Card key={index} className="relative group hover:shadow-lg transition-all duration-300">
                             <CardContent className="p-6">
@@ -136,7 +137,7 @@ export default function TaskManagerDocs() {
                     <p className="text-muted-foreground text-lg">{content.features.subtitle}</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
                     {content.features.items.map((feature, index) => {
                         const Icon = feature.icon;
                         return (
@@ -157,14 +158,14 @@ export default function TaskManagerDocs() {
             </section>
 
             {/* Contribute Section */}
-            <section className="bg-gradient-to-r from-black to-gray-950 py-12 sm:py-16">
+            <section className="bg-gradient-to-r from-black to-gray-950 py-10 sm:py-16 px-4 sm:px-6">
                 <div className="max-w-6xl mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl font-bold mb-4">{content.contribute.title}</h2>
                         <p className="text-muted-foreground text-lg">{content.contribute.subtitle}</p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8">
                         {content.contribute.ways.map((way, index) => {
                             const Icon = way.icon;
                             return (
@@ -227,12 +228,12 @@ export default function TaskManagerDocs() {
                     <h2 className="text-4xl font-bold mb-4">{content.community.title}</h2>
                     <p className="text-muted-foreground text-lg mb-8">{content.community.subtitle}</p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
                         {content.community.platforms.map((platform, index) => {
                             const Icon = platform.icon;
                             return (
                                 <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                                    <CardContent className="p-6 text-center">
+                                    <CardContent className="p-6 h-full flex flex-col items-center text-center">
                                         <div className="flex justify-center mb-4">
                                             <div className={`p-4 bg-${platform.color}-100 rounded-full group-hover:bg-${platform.color}-200 transition-colors`}>
                                                 <Icon className={`w-6 h-6 text-${platform.color}-600`} />

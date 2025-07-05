@@ -1,28 +1,26 @@
 const gettingStartedContent = {
-  title: "Getting Started",
-  description: "Learn how to quickly set up and use Synkronex in your workflow.",
+  hero: {
+    badge: "Getting Started",
+    title: "Getting Started with Synkronex",
+    description: "Follow these steps to set up Synkronex and start managing your projects in minutes.",
+  },
   steps: [
     {
-      step: 1,
-      title: "Sign Up",
-      description: "Create your free account to get started."
+      icon: "Download",
+      title: "Install Dependencies",
+      description: "Run npm install to install all required packages.",
     },
     {
-      step: 2,
-      title: "Create a Project",
-      description: "Set up your first project and invite your team."
+      icon: "Settings",
+      title: "Configure Environment",
+      description: "Edit .env.local to set up your environment variables.",
     },
     {
-      step: 3,
-      title: "Add Tasks",
-      description: "Start adding and assigning tasks to team members."
+      icon: "CheckCircle",
+      title: "Start the App",
+      description: "Run npm run dev and open http://localhost:3000 in your browser.",
     },
-    {
-      step: 4,
-      title: "Track Progress",
-      description: "Monitor project status and collaborate in real time."
-    }
-  ]
+  ],
 };
 
 export default gettingStartedContent;
