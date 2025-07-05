@@ -24,7 +24,7 @@ import {
 export const content = {
     hero: {
         badge: "Open Source Project",
-        title: "Super PMS",
+        title: "Synkronex",
         subtitle: "Collaborative Task Management",
         description: "An open-source, modern task management application built with Next.js, TypeScript, and cutting-edge web technologies. Join our community of developers building the future of productivity tools.",
         buttons: {
@@ -103,7 +103,7 @@ export const content = {
     },
     features: {
         title: "Project Features",
-        subtitle: "What makes Super PMS special for both users and developers",
+        subtitle: "What makes Synkronex special for both users and developers",
         items: [
             {
                 title: "Real-time Collaboration",

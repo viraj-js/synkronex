@@ -1,6 +1,6 @@
 const gettingStartedContent = {
   title: "Getting Started",
-  description: "Learn how to quickly set up and use Super PMS in your workflow.",
+  description: "Learn how to quickly set up and use Synkronex in your workflow.",
   steps: [
     {
       step: 1,

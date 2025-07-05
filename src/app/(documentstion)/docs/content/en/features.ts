@@ -1,6 +1,6 @@
 const featuresContent = {
   title: "Project Features",
-  subtitle: "What makes Super PMS special for both users and developers",
+  subtitle: "What makes Synkronex special for both users and developers",
   items: [
     {
       title: "Real-time Collaboration",

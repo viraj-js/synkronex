@@ -1,6 +1,6 @@
 const introductionContent = {
   title: "Introduction",
-  description: "Super PMS is a modern, open-source project management system designed for teams of all sizes.",
+  description: "Synkronex is a modern, open-source project management system designed for teams of all sizes.",
   features: [
     "Easy project and task management",
     "Real-time collaboration",
