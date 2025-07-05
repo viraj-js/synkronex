@@ -9,35 +9,18 @@ import { useState } from "react";
 import {
     Github,
     ArrowRight,
-    Code,
     Users,
     Star,
-    CheckCircle,
-    BookOpen,
-    Rocket,
     GitBranch,
-    Coffee,
-    Play,
-    Download,
-    Zap,
-    Shield,
-    Database,
-    Palette,
-    MessageCircle,
     ExternalLink,
     Heart,
-    Terminal,
-    FileText,
-    Settings,
-    Bug,
-    Lightbulb
+    Bug
 } from "lucide-react";
 
 import { content } from './content/content.en'
 
 
 export default function TaskManagerDocs() {
-    const [activeTab, setActiveTab] = useState(0);
 
     return (
         <main className="min-h-screen bg-background">

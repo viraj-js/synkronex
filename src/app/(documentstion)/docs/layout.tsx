@@ -1,6 +1,5 @@
 // Updated layout component
-import { documentationNavigation } from '@/utils/documentation/content/navigation'
-import Link from 'next/link'
+// Removed unused imports to fix lint errors
 import React from 'react'
 import Navbar from './navbar'
 import { ThemeProvider } from '@/components/theme/theme-provider'

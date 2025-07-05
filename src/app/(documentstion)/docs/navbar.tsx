@@ -2,7 +2,7 @@
 "use client"
 
 import { documentationNavigation } from '@/utils/documentation/content/navigation'
-import navbarContent from './content/en/navbar';
+// Removed unused import to fix lint error
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
