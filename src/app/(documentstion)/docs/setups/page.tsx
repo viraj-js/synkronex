@@ -42,6 +42,12 @@ export default function SetupsPage() {
             <p className="text-muted-foreground text-sm flex-1">Automate CI/CD for your Next.js app using GitHub Actions.</p>
             <Link className="text-primary font-medium hover:underline mt-2" href="/docs/setups/github-actions-in-nextjs">Read more →</Link>
           </div>
+          {/* PWA */}
+          <div className="rounded-xl border bg-card shadow p-6 flex flex-col gap-2">
+            <div className="flex items-center gap-2 mb-1"><span className="text-2xl">⚡</span><span className="font-semibold">PWA in Next.js</span></div>
+            <p className="text-muted-foreground text-sm flex-1">Enable Progressive Web App features (offline, install, caching) in your Next.js project using next-pwa and a manifest file.</p>
+            <Link className="text-primary font-medium hover:underline mt-2" href="/docs/setups/pwa-in-nextjs">Read more →</Link>
+          </div>
         </div>
         <div className="bg-accent/40 rounded-xl p-5 border text-sm">
           <h2 className="font-semibold mb-2 flex items-center gap-2">📝 Additional Notes</h2>
