@@ -1,0 +1,25 @@
+{
+  "shadcn-in-nextjs": {
+    "heading": "🎨 Setting up shadcn/ui in Next.js",
+    "steps": [
+      {
+        "title": "Install shadcn/ui CLI",
+        "code": "npx shadcn-ui@latest init",
+        "notes": ["Follow the prompts to choose your styling (e.g., Tailwind CSS)."]
+      },
+      {
+        "title": "Add a component",
+        "code": "npx shadcn-ui@latest add button",
+        "notes": []
+      },
+      {
+        "title": "Customize components",
+        "notes": ["Edit the generated components in your project as needed."]
+      },
+      {
+        "title": "Read the docs",
+        "notes": ["See https://ui.shadcn.com/docs/installation for more details."]
+      }
+    ]
+  }
+}

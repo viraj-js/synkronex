@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, CardContent } from '@/components/ui/card'
+import CodeBlock from '@/components/client/CodeBlock';
 import { Badge } from '@/components/ui/badge'
 import { Users, Zap, Layers, Cloud } from 'lucide-react'
 import introductionContent from '../content/en/introduction'
@@ -29,6 +30,9 @@ const page = () => {
                 <Icon className={`w-8 h-8 mb-2 text-${feature.color}-600`} />
                 <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
                 <p className="text-muted-foreground text-sm mb-2">{feature.description}</p>
+                {feature.code && (
+                  <CodeBlock code={feature.code} language="bash" />
+                )}
               </CardContent>
             </Card>
           );

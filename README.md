@@ -66,6 +66,24 @@ Open [http://localhost:3000](http://localhost:3000) to see the app.
 
 ---
 
+## 🧪 Testing & Quality
+
+This project uses **Jest** and **React Testing Library** for unit and integration tests. All tests are colocated in `__tests__` folders near the code they test.
+
+- To run all tests:
+  ```bash
+  npm test
+  ```
+- For detailed setup and advanced usage, see [`README.testing.md`](./README.testing.md).
+
+### Adding or Updating Tests
+- Add new test files in the closest `__tests__` folder to your component, page, or module.
+- Name tests `[filename].test.ts` or `[filename].test.tsx`.
+- Use React Testing Library for UI; use plain Jest for logic/content.
+- See the Testing README for more examples and best practices.
+
+---
+
 ## 🌐 Multi-Language Content
 
 All textual content is externalized into modular files for each language and route. To add or edit content, update the appropriate file in `src/app/(documentstion)/docs/content/[lang]/...`.

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import componentsContent from '../content/en/components';
 import ClientComponentGrid from '@/components/client/ClientComponentGrid';

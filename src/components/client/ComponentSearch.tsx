@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import * as React from 'react';
 
 interface ComponentSearchProps {
   onSearch: (query: string) => void;
 }
 
 const ComponentSearch: React.FC<ComponentSearchProps> = ({ onSearch }) => {
-  const [value, setValue] = useState('');
+  const [value, setValue] = React.useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);

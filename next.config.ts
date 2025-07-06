@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 
 const withPWA = require('next-pwa')({
@@ -10,6 +10,8 @@ const withPWA = require('next-pwa')({
 
 const nextConfig: NextConfig = withPWA({
   /* config options here */
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
 });
+
 
 export default nextConfig;

@@ -9,16 +9,19 @@ const gettingStartedContent = {
       icon: "Download",
       title: "Install Dependencies",
       description: "Run npm install to install all required packages.",
+      code: undefined,
     },
     {
       icon: "Settings",
       title: "Configure Environment",
       description: "Edit .env.local to set up your environment variables.",
+      code: undefined,
     },
     {
       icon: "CheckCircle",
       title: "Start the App",
       description: "Run npm run dev and open http://localhost:3000 in your browser.",
+      code: undefined,
     },
   ],
 };
