@@ -19,8 +19,35 @@ export default function JestInNextjsPage() {
           </div>
           <h1 className="text-3xl font-bold mb-2 flex items-center gap-2">🧪 Setting up Jest in Next.js</h1>
           <p className="mb-6 text-muted-foreground">
-            <strong>Jest</strong> is a popular JavaScript testing framework. <strong>Testing Library</strong> provides utilities for testing React components in a user-centric way. This setup will allow you to write robust unit and integration tests for your Next.js app.
+            <strong>Jest</strong> is a popular JavaScript testing framework, and <strong>Testing Library</strong> provides utilities for testing React components in a way that focuses on user interactions. Together, they allow you to write robust unit and integration tests for your Next.js app, ensuring your code works as expected and remains reliable as your project grows.
           </p>
+          <div className="mb-4">
+            <h2 className="text-xl font-semibold mb-2">What does each install/config command do?</h2>
+            <ul className="list-disc ml-6 space-y-2 text-muted-foreground">
+              <li><strong>npm install --save-dev jest @testing-library/react @testing-library/jest-dom babel-jest @types/jest jest-environment-jsdom identity-obj-proxy</strong>: Installs all necessary packages for testing in a TypeScript-based Next.js project:
+                <ul className="ml-4 mt-2 space-y-1 text-sm">
+                  <li><strong>jest</strong>: The core testing framework for running and structuring your tests.</li>
+                  <li><strong>@testing-library/react</strong>: Provides utilities for rendering and interacting with React components in tests.</li>
+                  <li><strong>@testing-library/jest-dom</strong>: Adds custom matchers for asserting on DOM nodes, making your tests more expressive.</li>
+                  <li><strong>babel-jest</strong>: Allows Jest to use your Babel configuration for transforming files, including TypeScript if Babel is set up for it.</li>
+                  <li><strong>@types/jest</strong>: TypeScript type definitions for Jest, improving autocompletion and type safety in tests.</li>
+                  <li><strong>jest-environment-jsdom</strong>: Simulates a browser environment for your tests using JSDOM, enabling DOM APIs.</li>
+                  <li><strong>identity-obj-proxy</strong>: Mocks CSS module imports so you can test components using CSS modules without errors.</li>
+                </ul>
+              </li>
+              <li><strong>jest.config.js</strong>: The configuration file for Jest. Sets up the test environment, configures module resolution (like aliasing <code>@/</code> to <code>src/</code>), ignores certain paths, and tells Jest how to handle TypeScript and CSS modules.</li>
+              <li><strong>jest.setup.js</strong>: A setup file that runs before your tests. Typically used to import <code>@testing-library/jest-dom</code> so you get the custom matchers in every test file.</li>
+            </ul>
+          </div>
+          <div className="mb-4">
+            <h2 className="text-xl font-semibold mb-2">Why use Jest + Testing Library?</h2>
+            <ul className="list-disc ml-6 space-y-2 text-muted-foreground">
+              <li>Automates testing to catch bugs early and ensure code correctness</li>
+              <li>Enables user-focused testing for React components</li>
+              <li>Supports TypeScript out of the box</li>
+              <li>Easy to run tests locally or in CI/CD pipelines</li>
+            </ul>
+          </div>
           <ol className="space-y-6 list-decimal ml-5">
             <li>
               <div className="flex items-center gap-2 mb-2"><CheckCircle className="w-4 h-4 text-green-600" /> <strong>Install dependencies</strong></div>
@@ -46,10 +73,7 @@ export default function JestInNextjsPage() {
   },
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
   transform: {
-    '^.+\\.(ts|tsx|js|jsx)$': [
-      'ts-jest',
-      { tsconfig: 'tsconfig.json' }
-    ]
+    '^.+\\.(ts|tsx|js|jsx)$': 'babel-jest',
   },
   transformIgnorePatterns: ['/node_modules/'],
 };`} language="js" />

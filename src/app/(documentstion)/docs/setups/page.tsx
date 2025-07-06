@@ -3,37 +3,54 @@
 import * as React from 'react';
 import Link from 'next/link';
 
-
-
-
-
 export default function SetupsPage() {
-
-
   return (
-    <div className="flex min-h-screen">
-      {/* Main content */}
-      <main className="flex-1 p-6 max-w-3xl mx-auto">
-        <h1 className="mb-4">🛠️ Project Setup Guides</h1>
-        <p>Welcome! Here you&apos;ll find all the setup guides for this project. Use these guides to quickly bootstrap new projects or onboard new team members.</p>
-        <hr className="my-6" />
-        <h2>⚡ Quick Start</h2>
-        <p>See the <Link href="../../../README.setup.md">Setup Guide</Link> for step-by-step instructions on installing dependencies, running the dev server, and configuring Jest.</p>
-        <h3>🟦 TypeScript in Next.js</h3>
-        <p>Learn how to add and configure TypeScript for type-safe, scalable Next.js apps. <Link href="/docs/setups/ts-in-nextjs">Read more →</Link></p>
-        <h3>🧪 Jest in Next.js</h3>
-        <p>Step-by-step guide for setting up Jest and React Testing Library for robust testing. <Link href="/docs/setups/jest-in-nextjs">Read more →</Link></p>
-        <h3>🎨 shadcn/ui in Next.js</h3>
-        <p>How to install and use shadcn/ui for beautiful, customizable UI components. <Link href="/docs/setups/shadcn-in-nextjs">Read more →</Link></p>
-        <h3>🐶 Husky in Next.js</h3>
-        <p>Set up Husky Git hooks to enforce linting and testing before every commit. <Link href="/docs/setups/husky-in-nextjs">Read more →</Link></p>
-        <h3>🤖 GitHub Actions in Next.js</h3>
-        <p>Automate CI/CD for your Next.js app using GitHub Actions. <Link href="/docs/setups/github-actions-in-nextjs">Read more →</Link></p>
-        <h2>📝 Additional Notes</h2>
-        <ul>
-          <li>All setup guides are Markdown-based and can be extended for new tools or frameworks.</li>
-          <li>For any new setup (e.g., CI/CD, linting, deployment), add a new guide in this folder and link it here.</li>
-        </ul>
+    <div className="flex min-h-screen bg-background">
+      <main className="flex-1 p-6 max-w-4xl mx-auto">
+        <div className="mb-8 text-center">
+          <h1 className="text-3xl font-bold mb-2 flex items-center justify-center gap-2">🛠️ Project Setup Guides</h1>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Welcome! Here you'll find all the setup guides for this project. Use these guides to quickly bootstrap new projects or onboard new team members.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+          {/* TypeScript */}
+          <div className="rounded-xl border bg-card shadow p-6 flex flex-col gap-2">
+            <div className="flex items-center gap-2 mb-1"><span className="text-2xl">🟦</span><span className="font-semibold">TypeScript in Next.js</span></div>
+            <p className="text-muted-foreground text-sm flex-1">Add and configure TypeScript for type-safe, scalable Next.js apps.</p>
+            <Link className="text-primary font-medium hover:underline mt-2" href="/docs/setups/ts-in-nextjs">Read more →</Link>
+          </div>
+          {/* Jest */}
+          <div className="rounded-xl border bg-card shadow p-6 flex flex-col gap-2">
+            <div className="flex items-center gap-2 mb-1"><span className="text-2xl">🧪</span><span className="font-semibold">Jest in Next.js</span></div>
+            <p className="text-muted-foreground text-sm flex-1">Set up Jest and React Testing Library for robust testing.</p>
+            <Link className="text-primary font-medium hover:underline mt-2" href="/docs/setups/jest-in-nextjs">Read more →</Link>
+          </div>
+          {/* shadcn/ui */}
+          <div className="rounded-xl border bg-card shadow p-6 flex flex-col gap-2">
+            <div className="flex items-center gap-2 mb-1"><span className="text-2xl">🎨</span><span className="font-semibold">shadcn/ui in Next.js</span></div>
+            <p className="text-muted-foreground text-sm flex-1">Install and use shadcn/ui for beautiful, customizable UI components.</p>
+            <Link className="text-primary font-medium hover:underline mt-2" href="/docs/setups/shadcn-in-nextjs">Read more →</Link>
+          </div>
+          {/* Husky */}
+          <div className="rounded-xl border bg-card shadow p-6 flex flex-col gap-2">
+            <div className="flex items-center gap-2 mb-1"><span className="text-2xl">🐶</span><span className="font-semibold">Husky in Next.js</span></div>
+            <p className="text-muted-foreground text-sm flex-1">Set up Husky Git hooks to enforce linting and testing before every commit.</p>
+            <Link className="text-primary font-medium hover:underline mt-2" href="/docs/setups/husky-in-nextjs">Read more →</Link>
+          </div>
+          {/* GitHub Actions */}
+          <div className="rounded-xl border bg-card shadow p-6 flex flex-col gap-2 md:col-span-2">
+            <div className="flex items-center gap-2 mb-1"><span className="text-2xl">🤖</span><span className="font-semibold">GitHub Actions in Next.js</span></div>
+            <p className="text-muted-foreground text-sm flex-1">Automate CI/CD for your Next.js app using GitHub Actions.</p>
+            <Link className="text-primary font-medium hover:underline mt-2" href="/docs/setups/github-actions-in-nextjs">Read more →</Link>
+          </div>
+        </div>
+        <div className="bg-accent/40 rounded-xl p-5 border text-sm">
+          <h2 className="font-semibold mb-2 flex items-center gap-2">📝 Additional Notes</h2>
+          <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
+            <li>All setup guides are Markdown-based and can be extended for new tools or frameworks.</li>
+            <li>For any new setup (e.g., CI/CD, linting, deployment), add a new guide in this folder and link it here.</li>
+            <li>See the <Link className="underline" href="../../../README.setup.md">Setup Guide</Link> for step-by-step instructions on installing dependencies, running the dev server, and configuring Jest.</li>
+          </ul>
+        </div>
       </main>
     </div>
   );

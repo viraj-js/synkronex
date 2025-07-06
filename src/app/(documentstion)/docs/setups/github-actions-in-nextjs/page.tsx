@@ -22,6 +22,27 @@ export default function GithubActionsInNextjsPage() {
           <p className="mb-6 text-muted-foreground">
             <strong>GitHub Actions</strong> is a powerful automation platform built into GitHub. It lets you run scripts on every push or pull request—perfect for testing, linting, building, and deploying your Next.js app automatically.
           </p>
+          <div className="mb-4">
+            <h2 className="text-xl font-semibold mb-2">What does each workflow step do?</h2>
+            <ul className="list-disc ml-6 space-y-2 text-muted-foreground">
+              <li><strong>Checkout repository</strong>: Uses <code>actions/checkout@v4</code> to clone your code into the CI environment.</li>
+              <li><strong>Set up Node.js</strong>: Uses <code>actions/setup-node@v4</code> to specify the Node.js version (e.g., 20) for your workflow.</li>
+              <li><strong>Install dependencies</strong>: Runs <code>npm ci</code> for a clean, reproducible install using your <code>package-lock.json</code>.</li>
+              <li><strong>Lint</strong>: Runs <code>npm run lint</code> to check code style and catch errors. <code>|| true</code> allows the workflow to continue even if lint fails (optional).</li>
+              <li><strong>Build</strong>: Runs <code>npm run build</code> to build your Next.js app, ensuring it compiles successfully.</li>
+              <li><strong>Run tests</strong>: Runs <code>npm test -- --coverage</code> to execute your test suite and collect code coverage.</li>
+              <li><strong>Upload coverage report</strong>: Uses <code>actions/upload-artifact@v4</code> to save the coverage report as an artifact you can download from the workflow run.</li>
+            </ul>
+          </div>
+          <div className="mb-4">
+            <h2 className="text-xl font-semibold mb-2">Why use GitHub Actions for Next.js?</h2>
+            <ul className="list-disc ml-6 space-y-2 text-muted-foreground">
+              <li>Automates quality checks (lint, test, build) on every push or PR</li>
+              <li>Prevents broken code from being merged</li>
+              <li>Enables continuous deployment and integration</li>
+              <li>Easy to customize for your team’s needs</li>
+            </ul>
+          </div>
         </CardContent>
       </Card>
 
