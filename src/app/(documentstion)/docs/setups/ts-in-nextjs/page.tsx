@@ -25,7 +25,7 @@ export default function TsInNextjsPage() {
           <strong>Recommended <code>tsconfig.json</code> options</strong>
           <ul>
             <li>Next.js sets sensible defaults, but you can customize as needed.</li>
-            <li>Keep <code>"jsx": "preserve"</code> (required by Next.js).</li>
+            <li>Keep <code>&quot;jsx&quot;: &quot;preserve&quot;</code> (required by Next.js).</li>
           </ul>
         </li>
         <li>

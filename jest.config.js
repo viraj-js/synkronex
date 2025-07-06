@@ -7,10 +7,7 @@ module.exports = {
   },
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
   transform: {
-    '^.+\\.(ts|tsx|js|jsx)$': [
-      'ts-jest',
-      { tsconfig: 'tsconfig.json' }
-    ]
+    '^.+\\.(ts|tsx|js|jsx)$': 'babel-jest',
   },
   transformIgnorePatterns: ['/node_modules/'],
 };

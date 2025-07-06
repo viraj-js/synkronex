@@ -1,12 +1,12 @@
+"use client";
+
 import React from 'react';
 import CodeBlock from '@/components/client/CodeBlock';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { FlaskConical, FileCode2, CheckCircle, BarChart, Github } from 'lucide-react';
 
-export const metadata = {
-  title: 'Jest in Next.js Setup',
-};
+
 
 export default function JestInNextjsPage() {
   return (
@@ -80,10 +80,8 @@ export default function JestInNextjsPage() {
       <Card className="mb-8">
         <CardContent className="py-8">
           <div className="flex items-center gap-2 mb-2"><FileCode2 className="w-4 h-4 text-blue-600" /> <Badge variant="outline">Example Test File</Badge></div>
-          <p className="mb-2">Here’s a simple example of a React component test using Testing Library and Jest:</p>
-          <CodeBlock
-            language="tsx"
-            code={`import { render, screen } from '@testing-library/react';
+          <p className="mb-2">Here&apos;s a simple example of a React component test using Testing Library and Jest:</p>
+          <CodeBlock language="tsx" code={`import { render, screen } from '@testing-library/react';
 import Home from '../pages/index';
 
 describe('Home', () => {

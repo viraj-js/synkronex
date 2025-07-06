@@ -13,6 +13,8 @@ export default function SetupsLayout({ children }: { children: React.ReactNode }
     { name: 'TypeScript in Next.js', href: '/docs/setups/ts-in-nextjs', icon: '🟦' },
     { name: 'Jest in Next.js', href: '/docs/setups/jest-in-nextjs', icon: '🧪' },
     { name: 'shadcn/ui in Next.js', href: '/docs/setups/shadcn-in-nextjs', icon: '🎨' },
+    { name: 'Husky in Next.js', href: '/docs/setups/husky-in-nextjs', icon: '🎗️' },
+    { name: 'GitHub Actions in Next.js', href: '/docs/setups/github-actions-in-nextjs', icon: '🎄' },
   ];
 
   return (
