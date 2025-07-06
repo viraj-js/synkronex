@@ -15,6 +15,7 @@ export default function SetupsLayout({ children }: { children: React.ReactNode }
     { name: 'shadcn/ui in Next.js', href: '/docs/setups/shadcn-in-nextjs', icon: '🎨' },
     { name: 'Husky in Next.js', href: '/docs/setups/husky-in-nextjs', icon: '🎗️' },
     { name: 'GitHub Actions in Next.js', href: '/docs/setups/github-actions-in-nextjs', icon: '🎄' },
+    { name: 'PWA in Next.js', href: '/docs/setups/pwa-in-nextjs', icon: '⚡' },
   ];
 
   return (
