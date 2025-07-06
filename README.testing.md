@@ -1,21 +1,34 @@
-# Testing & Setup Guide for Synkronex
+# Synkronex Testing Guide
 
-This guide covers everything you need to know to set up and run tests in this project, including Jest, React Testing Library, and TypeScript integration.
+[![CI](https://img.shields.io/github/actions/workflow/status/viraj-js/synkronex/ci.yml?branch=main)](https://github.com/viraj-js/synkronex/actions)
+[![License](https://img.shields.io/github/license/viraj-js/synkronex)](LICENSE)
+
+A comprehensive guide to testing in the Synkronex project, covering setup, structure, and best practices using Jest, React Testing Library, and TypeScript.
 
 ---
 
-## 🧪 Test Structure & Philosophy
+## Table of Contents
+- [Overview](#overview)
+- [Folder Structure](#folder-structure)
+- [Prerequisites](#prerequisites)
+- [Running Tests](#running-tests)
+- [Adding Tests](#adding-tests)
+- [References](#references)
 
-- **Colocated `__tests__` folders:**
-  - Every major code area (component, page, content module, feature) has a nearby `__tests__` folder.
-  - Test files are named `[name].test.ts` or `[name].test.tsx`.
-- **Test what matters:**
-  - UI: Render and assert on visible output and interactivity.
-  - Content modules: Check for correct exports and structure.
-  - Utilities/hooks: Test pure logic and side effects.
+---
 
-### Example Structure
-```
+## Overview
+Synkronex uses a modern, scalable approach to testing. All major code areas—including components, pages, and utilities—are covered by colocated tests. We use:
+- **Jest** for test running and assertions
+- **React Testing Library** for UI/component tests
+- **TypeScript** for type safety throughout
+
+---
+
+## Folder Structure
+Test files are placed in `__tests__` folders next to the code they test. This keeps tests maintainable and discoverable.
+
+```text
 src/
   components/
     Card.tsx
@@ -40,39 +53,45 @@ src/
 
 ---
 
-## ⚙️ Setup & Running Tests
-
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-2. **Run all tests:**
-   ```bash
-   npm test
-   ```
-3. **Run tests with watch mode:**
-   ```bash
-   npm run test:watch
-   ```
-   *(Add this script to `package.json` if not present:)*
-   ```json
-   "scripts": {
-     "test:watch": "jest --watch"
-   }
-   ```
+## Prerequisites
+- Node.js (v18+ recommended)
+- npm (v9+ recommended)
+- All project dependencies installed (`npm install`)
 
 ---
 
-## 📝 Adding New Tests
+## Running Tests
 
-- Add new test files in the closest `__tests__` folder to the code you’re testing.
-- Name them `[filename].test.ts` (for pure TS) or `[filename].test.tsx` (for React components).
-- Use [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for UI components.
-- Use [Jest](https://jestjs.io/docs/getting-started) for pure logic/content modules.
+- **Install dependencies:**
+  ```bash
+  npm install
+  ```
+- **Run all tests:**
+  ```bash
+  npm test
+  ```
+- **Run tests in watch mode:**
+  ```bash
+  npm run test:watch
+  ```
+  *(If `test:watch` is missing, add this to your `package.json` scripts:)*
+  ```json
+  "scripts": {
+    "test:watch": "jest --watch"
+  }
+  ```
 
 ---
 
-## 📚 References
-- [Jest Docs](https://jestjs.io/docs/getting-started)
-- [ts-jest Docs](https://kulshekhar.github.io/ts-jest/)
-- [React Testing Library Docs](https://testing-library.com/docs/react-testing-library/intro/)
+## Adding Tests
+- Place new test files in the nearest `__tests__` folder to the code under test.
+- Name test files as `[filename].test.ts` (for logic) or `[filename].test.tsx` (for React components).
+- Use [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for UI.
+- Use [Jest](https://jestjs.io/docs/getting-started) for logic and content modules.
+
+---
+
+## References
+- [Jest Documentation](https://jestjs.io/docs/getting-started)
+- [ts-jest Documentation](https://kulshekhar.github.io/ts-jest/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
