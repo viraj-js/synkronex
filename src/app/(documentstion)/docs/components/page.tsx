@@ -1,6 +1,6 @@
 import { Badge } from '@/components/ui/badge';
 import componentsContent from '../content/en/components';
-import ClientComponentGrid from './client/ClientComponentGrid';
+import ClientComponentGrid from '@/components/client/ClientComponentGrid';
 
 const page = () => {
   return (
