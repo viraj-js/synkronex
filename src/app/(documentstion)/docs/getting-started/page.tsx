@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, CardContent } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import { Badge } from '@/components/ui/badge';
+import CodeBlock from '@/components/client/CodeBlock';
 import { CheckCircle, Download, Settings } from 'lucide-react'
 import gettingStartedContent from '../content/en/getting-started'
 
@@ -27,6 +28,9 @@ const page = () => {
               {Icon && <Icon className="w-8 h-8 mb-2" />}
               <h3 className="font-semibold text-lg mb-2">{step.title}</h3>
               <p className="text-muted-foreground text-sm mb-2">{step.description}</p>
+              {step.code && (
+                <CodeBlock code={step.code} language="bash" />
+              )}
             </CardContent>
           </Card>
         );

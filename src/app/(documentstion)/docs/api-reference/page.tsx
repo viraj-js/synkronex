@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, CardContent } from '@/components/ui/card'
+import CodeBlock from '@/components/client/CodeBlock';
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { ExternalLink } from 'lucide-react'
