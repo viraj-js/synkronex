@@ -1,7 +1,7 @@
 'use client';
 
 import { setupsGuides } from '../../content/en/setups';
-import React from 'react';
+import * as React from 'react';
 import CodeBlock from '@/components/client/CodeBlock';
 
 // TypeScript types for guide and step

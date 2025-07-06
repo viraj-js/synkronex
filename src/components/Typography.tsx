@@ -1,7 +1,7 @@
-import React, { JSX } from 'react';
+import * as React from 'react';
 
 export interface TypographyProps {
-  as?: keyof JSX.IntrinsicElements;
+  as?: keyof React.JSX.IntrinsicElements;
   variant?: 'h1' | 'h2' | 'h3' | 'body' | 'caption';
   children: React.ReactNode;
 }
