@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur  ">
-      <div className="flex items-center justify-between max-w-7xl mx-auto px-2 sm:px-6 py-2">
+      <div className="flex items-center justify-between w-full max-w-7xl mx-auto px-2 sm:px-6 py-2">
         {/* Logo/Title */}
         <Link href="/" className="flex items-center gap-2 font-bold text-xl text-primary">
           <span className="hidden sm:inline">Synkronex Docs</span>

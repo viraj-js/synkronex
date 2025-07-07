@@ -22,6 +22,7 @@ export default function SetupsLayout({ children }: { children: React.ReactNode }
     { name: 'PWA in Next.js', href: '/docs/setups/pwa-in-nextjs', icon: '⚡' },
     { name: 'Prettier in Next.js', href: '/docs/setups/prettier-in-nextjs', icon: '✨' },
     { name: 'ESLint in Next.js', href: '/docs/setups/eslint-in-nextjs', icon: '🧹' },
+    { name: 'react-syntax-highlighter in Next.js', href: '/docs/setups/react-syntax-highlighter-in-nextjs', icon: '🟦' },
   ];
 
   return (

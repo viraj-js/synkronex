@@ -2,6 +2,8 @@
 
 import * as React from 'react';
 import { useState } from 'react';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 interface CodeBlockProps {
   code: string;
@@ -58,9 +60,23 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ code, language = 'tsx' }) => {
           {copied ? 'Copied!' : 'Copy'}
         </button>
       </div>
-      <pre className="px-4 py-4 text-xs sm:text-sm leading-relaxed text-gray-100 font-mono whitespace-pre-wrap break-words min-h-[48px] max-h-72 overflow-x-auto bg-transparent">
-        <code>{code}</code>
-      </pre>
+      <SyntaxHighlighter
+        language={language}
+        style={oneDark}
+        customStyle={{
+          borderRadius: '0 0 0.75rem 0.75rem',
+          fontSize: '0.95em',
+          margin: 0,
+          background: 'transparent',
+          padding: '1rem',
+          maxHeight: '18rem',
+          overflowX: 'auto',
+        }}
+        codeTagProps={{ style: { fontFamily: 'inherit' } }}
+        showLineNumbers={false}
+      >
+        {code}
+      </SyntaxHighlighter>
     </div>
   );
 };

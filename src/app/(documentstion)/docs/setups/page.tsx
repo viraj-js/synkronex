@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 export default function SetupsPage() {
   return (
-    <div className="flex min-h-screen bg-background">
-      <main className="flex-1 p-6 max-w-4xl mx-auto">
+    <div className="flex min-h-screen bg-background w-full">
+      <main className="flex-1 p-6 w-full">
         <div className="mb-8 text-center">
           <h1 className="text-3xl font-bold mb-2 flex items-center justify-center gap-2">
             🛠️ Project Setup Guides
@@ -142,6 +142,23 @@ export default function SetupsPage() {
             <Link
               className="text-primary font-medium hover:underline mt-2"
               href="/docs/setups/pwa-in-nextjs"
+            >
+              Read more →
+            </Link>
+          </div>
+          {/* react-syntax-highlighter */}
+          <div className="rounded-xl border bg-card shadow p-6 flex flex-col gap-2">
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-2xl">🟦</span>
+              <span className="font-semibold">react-syntax-highlighter in Next.js</span>
+            </div>
+            <p className="text-muted-foreground text-sm flex-1">
+              Add and configure react-syntax-highlighter for syntax highlighting in your Next.js
+              project.
+            </p>
+            <Link
+              className="text-primary font-medium hover:underline mt-2"
+              href="/docs/setups/react-syntax-highlighter-in-nextjs"
             >
               Read more →
             </Link>
