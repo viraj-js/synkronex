@@ -6,12 +6,7 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
   icon?: React.ReactNode;
 }
 
-export const Input: React.FC<InputProps> = ({
-  variant = 'text',
-  error,
-  icon,
-  ...props
-}) => (
+export const Input: React.FC<InputProps> = ({ variant = 'text', error, icon, ...props }) => (
   <div className={`input-wrapper${error ? ' input-error' : ''}`}>
     {icon && <span className="input-icon">{icon}</span>}
     <input type={variant} {...props} />

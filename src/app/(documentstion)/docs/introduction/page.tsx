@@ -1,9 +1,9 @@
-import React from 'react'
-import { Card, CardContent } from '@/components/ui/card'
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
 import CodeBlock from '@/components/client/CodeBlock';
-import { Badge } from '@/components/ui/badge'
-import { Users, Zap, Layers, Cloud } from 'lucide-react'
-import introductionContent from '../content/en/introduction'
+import { Badge } from '@/components/ui/badge';
+import { Users, Zap, Layers, Cloud } from 'lucide-react';
+import introductionContent from '../content/en/introduction';
 
 const iconMap = {
   Users,
@@ -17,7 +17,9 @@ const page = () => {
   return (
     <main className="min-h-screen bg-background px-4 sm:px-6 py-12">
       <section className="max-w-3xl mx-auto text-center mb-12">
-        <Badge variant="secondary" className="mb-4">{hero.badge}</Badge>
+        <Badge variant="secondary" className="mb-4">
+          {hero.badge}
+        </Badge>
         <h1 className="text-4xl font-bold mb-4">{hero.title}</h1>
         <p className="text-muted-foreground text-lg mb-6">{hero.description}</p>
       </section>
@@ -30,9 +32,7 @@ const page = () => {
                 <Icon className={`w-8 h-8 mb-2 text-${feature.color}-600`} />
                 <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
                 <p className="text-muted-foreground text-sm mb-2">{feature.description}</p>
-                {feature.code && (
-                  <CodeBlock code={feature.code} language="bash" />
-                )}
+                {feature.code && <CodeBlock code={feature.code} language="bash" />}
               </CardContent>
             </Card>
           );
@@ -40,6 +40,6 @@ const page = () => {
       </section>
     </main>
   );
-}
+};
 
-export default page
+export default page;

@@ -11,7 +11,7 @@ export interface ModalProps {
 export const Modal: React.FC<ModalProps> = ({ open, onClose, children, fullscreen, actions }) => {
   if (!open) return null;
   return (
-    <div className={`modal${fullscreen ? ' modal-fullscreen' : ''}`}> 
+    <div className={`modal${fullscreen ? ' modal-fullscreen' : ''}`}>
       <div className="modal-backdrop" onClick={onClose} />
       <div className="modal-content">
         {children}

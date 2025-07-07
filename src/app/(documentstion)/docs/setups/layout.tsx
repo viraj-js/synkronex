@@ -14,7 +14,11 @@ export default function SetupsLayout({ children }: { children: React.ReactNode }
     { name: 'Jest in Next.js', href: '/docs/setups/jest-in-nextjs', icon: '🧪' },
     { name: 'shadcn/ui in Next.js', href: '/docs/setups/shadcn-in-nextjs', icon: '🎨' },
     { name: 'Husky in Next.js', href: '/docs/setups/husky-in-nextjs', icon: '🎗️' },
-    { name: 'GitHub Actions in Next.js', href: '/docs/setups/github-actions-in-nextjs', icon: '🎄' },
+    {
+      name: 'GitHub Actions in Next.js',
+      href: '/docs/setups/github-actions-in-nextjs',
+      icon: '🎄',
+    },
     { name: 'PWA in Next.js', href: '/docs/setups/pwa-in-nextjs', icon: '⚡' },
     { name: 'Prettier in Next.js', href: '/docs/setups/prettier-in-nextjs', icon: '✨' },
   ];
@@ -23,12 +27,15 @@ export default function SetupsLayout({ children }: { children: React.ReactNode }
     <div className="flex min-h-screen">
       {/* Sidebar */}
       <aside className="hidden md:flex flex-col w-64 border-r bg-background/90 p-4">
-        <Link href="/docs" className="mb-6 flex items-center gap-2 text-primary hover:underline font-semibold text-base">
+        <Link
+          href="/docs"
+          className="mb-6 flex items-center gap-2 text-primary hover:underline font-semibold text-base"
+        >
           ← Back to Docs
         </Link>
         <h2 className="font-bold text-lg mb-4">Setup Topics</h2>
         <nav className="flex flex-col gap-2">
-          {links.map(link => (
+          {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -64,7 +71,7 @@ export default function SetupsLayout({ children }: { children: React.ReactNode }
           </button>
           <h2 className="font-bold text-lg mb-4">Setup Topics</h2>
           <nav className="flex flex-col gap-2">
-            {links.map(link => (
+            {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -82,9 +89,7 @@ export default function SetupsLayout({ children }: { children: React.ReactNode }
         </aside>
       )}
       {/* Main content */}
-      <main className="flex-1 p-6 max-w-3xl mx-auto">
-        {children}
-      </main>
+      <main className="flex-1 p-6 max-w-3xl mx-auto">{children}</main>
     </div>
   );
 }

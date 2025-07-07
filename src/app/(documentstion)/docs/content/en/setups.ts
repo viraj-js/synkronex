@@ -7,21 +7,17 @@ export const setupsGuides = [
       {
         title: 'Install shadcn/ui CLI',
         code: 'npx shadcn-ui@latest init',
-        details: [
-          'Follow the prompts to choose your styling (e.g., Tailwind CSS).'
-        ]
+        details: ['Follow the prompts to choose your styling (e.g., Tailwind CSS).'],
       },
       {
         title: 'Add a component',
         code: 'npx shadcn-ui@latest add button',
-        details: []
+        details: [],
       },
       {
         title: 'Customize components',
         code: null,
-        details: [
-          'Edit the generated components in your project as needed.'
-        ]
+        details: ['Edit the generated components in your project as needed.'],
       },
       {
         title: 'Read the docs',
@@ -31,12 +27,12 @@ export const setupsGuides = [
           {
             type: 'link',
             label: 'shadcn/ui installation docs',
-            href: 'https://ui.shadcn.com/docs/installation'
+            href: 'https://ui.shadcn.com/docs/installation',
           },
-          ' for more details.'
-        ]
-      }
-    ]
-  }
+          ' for more details.',
+        ],
+      },
+    ],
+  },
   // Add more guides here as needed (TypeScript, Jest, etc)
 ];

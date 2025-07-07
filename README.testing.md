@@ -8,6 +8,7 @@ A comprehensive guide to testing in the Synkronex project, covering setup, struc
 ---
 
 ## Table of Contents
+
 - [Overview](#overview)
 - [Folder Structure](#folder-structure)
 - [Prerequisites](#prerequisites)
@@ -18,7 +19,9 @@ A comprehensive guide to testing in the Synkronex project, covering setup, struc
 ---
 
 ## Overview
+
 Synkronex uses a modern, scalable approach to testing. All major code areas—including components, pages, and utilities—are covered by colocated tests. We use:
+
 - **Jest** for test running and assertions
 - **React Testing Library** for UI/component tests
 - **TypeScript** for type safety throughout
@@ -26,6 +29,7 @@ Synkronex uses a modern, scalable approach to testing. All major code areas—in
 ---
 
 ## Folder Structure
+
 Test files are placed in `__tests__` folders next to the code they test. This keeps tests maintainable and discoverable.
 
 ```text
@@ -54,6 +58,7 @@ src/
 ---
 
 ## Prerequisites
+
 - Node.js (v18+ recommended)
 - npm (v9+ recommended)
 - All project dependencies installed (`npm install`)
@@ -74,7 +79,7 @@ src/
   ```bash
   npm run test:watch
   ```
-  *(If `test:watch` is missing, add this to your `package.json` scripts:)*
+  _(If `test:watch` is missing, add this to your `package.json` scripts:)_
   ```json
   "scripts": {
     "test:watch": "jest --watch"
@@ -84,6 +89,7 @@ src/
 ---
 
 ## Adding Tests
+
 - Place new test files in the nearest `__tests__` folder to the code under test.
 - Name test files as `[filename].test.ts` (for logic) or `[filename].test.tsx` (for React components).
 - Use [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for UI.
@@ -92,6 +98,7 @@ src/
 ---
 
 ## References
+
 - [Jest Documentation](https://jestjs.io/docs/getting-started)
 - [ts-jest Documentation](https://kulshekhar.github.io/ts-jest/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)

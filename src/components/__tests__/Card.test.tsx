@@ -9,7 +9,11 @@ describe('Card', () => {
   });
 
   it('renders image if image prop is provided', () => {
-    render(<Card image="/test.png" alt="test-alt">Img Content</Card>);
+    render(
+      <Card image="/test.png" alt="test-alt">
+        Img Content
+      </Card>
+    );
     expect(screen.getByAltText('test-alt')).toBeInTheDocument();
   });
 

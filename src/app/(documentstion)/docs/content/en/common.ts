@@ -1,12 +1,12 @@
 const commonContent = {
-  appName: "Synkronex",
+  appName: 'Synkronex',
   nav: {
-    home: "Home",
-    docs: "Docs",
-    features: "Features",
-    contact: "Contact"
+    home: 'Home',
+    docs: 'Docs',
+    features: 'Features',
+    contact: 'Contact',
   },
-  language: "English"
+  language: 'English',
 };
 
 export default commonContent;

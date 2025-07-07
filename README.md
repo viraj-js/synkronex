@@ -5,7 +5,6 @@
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-2E3A4C?logo=tailwindcss&logoColor=white)
 ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-%23F7DF1E.svg?logo=react)
 
-
 **Synkronex** is a modern, open-source project management and documentation platform built with Next.js, TypeScript, and shadcn/ui. It features modular, multi-language content, a professional dark theme, and a scalable folder structure for easy maintenance and contribution.
 
 ---
@@ -41,6 +40,7 @@ This project uses **Jest** and **React Testing Library** for unit and integratio
 - For detailed setup and advanced usage, see [`README.testing.md`](./README.testing.md).
 
 ### Adding or Updating Tests
+
 - Add new test files in the closest `__tests__` folder to your component, page, or module.
 - Name tests `[filename].test.ts` or `[filename].test.tsx`.
 - Use React Testing Library for UI; use plain Jest for logic/content.
@@ -79,6 +79,5 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
-
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

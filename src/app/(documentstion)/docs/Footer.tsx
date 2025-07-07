@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 // Removed unused icon imports to fix lint errors
 import footerContent from './content/en/footer';
 
@@ -20,9 +20,7 @@ const Footer = () => (
           </Link>
         ))}
       </div>
-      <div className="text-xs">
-        {footerContent.madeWith}
-      </div>
+      <div className="text-xs">{footerContent.madeWith}</div>
     </div>
   </footer>
 );

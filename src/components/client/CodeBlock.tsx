@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import * as React from 'react';
 import { useState } from 'react';
@@ -13,7 +13,8 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ code, language = 'tsx' }) => {
 
   const handleCopy = () => {
     if (navigator && navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
-      navigator.clipboard.writeText(code)
+      navigator.clipboard
+        .writeText(code)
         .then(() => {
           setCopied(true);
           setTimeout(() => setCopied(false), 1500);

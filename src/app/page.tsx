@@ -14,7 +14,12 @@ const Page = () => {
           <ThemeToggle />
         </div>
         <CardContent className="flex flex-col items-center py-10 px-4 sm:px-8">
-          <Badge variant="secondary" className="mb-4 text-base px-3 py-1 rounded-full bg-muted dark:bg-[#23263a] text-foreground dark:text-[#c7d0e0] border-none">Coming Soon</Badge>
+          <Badge
+            variant="secondary"
+            className="mb-4 text-base px-3 py-1 rounded-full bg-muted dark:bg-[#23263a] text-foreground dark:text-[#c7d0e0] border-none"
+          >
+            Coming Soon
+          </Badge>
           <h1 className="text-2xl sm:text-3xl font-bold text-foreground dark:text-[#e7eaf3] mb-3 text-center">
             {comingSoonContent.title}
           </h1>
@@ -22,12 +27,21 @@ const Page = () => {
             {comingSoonContent.message}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 w-full justify-center">
-            <Button asChild size="lg" className="w-full sm:w-auto dark:bg-[#23263a] dark:text-[#e7eaf3] dark:hover:bg-[#2a2e3f] dark:border-[#363b50]">
+            <Button
+              asChild
+              size="lg"
+              className="w-full sm:w-auto dark:bg-[#23263a] dark:text-[#e7eaf3] dark:hover:bg-[#2a2e3f] dark:border-[#363b50]"
+            >
               <a href={comingSoonContent.docsLink}>
                 <BookOpen className="w-5 h-5 mr-2" /> View Docs
               </a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto dark:border-[#363b50] dark:text-[#c7d0e0] dark:hover:bg-[#1a1d29]">
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="w-full sm:w-auto dark:border-[#363b50] dark:text-[#c7d0e0] dark:hover:bg-[#1a1d29]"
+            >
               <a href={comingSoonContent.contributeLink} target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5 mr-2" /> Contribute
               </a>

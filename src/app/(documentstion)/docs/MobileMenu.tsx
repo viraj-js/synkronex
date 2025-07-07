@@ -1,15 +1,15 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 import { documentationNavigation } from '@/utils/documentation/content/navigation';
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 interface MobileMenuProps {
   open: boolean;
   onClose: () => void;
 }
 
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 export const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
   const pathName = usePathname();

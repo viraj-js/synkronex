@@ -10,6 +10,10 @@ export interface BadgeProps {
 export const Badge: React.FC<BadgeProps> = ({ label, status = 'info', removable, onRemove }) => (
   <span className={`badge badge-${status}`}>
     {label}
-    {removable && <button className="badge-remove" onClick={onRemove}>×</button>}
+    {removable && (
+      <button className="badge-remove" onClick={onRemove}>
+        ×
+      </button>
+    )}
   </span>
 );

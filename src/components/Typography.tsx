@@ -6,7 +6,11 @@ export interface TypographyProps {
   children: React.ReactNode;
 }
 
-export const Typography: React.FC<TypographyProps> = ({ as = 'span', variant = 'body', children }) => {
+export const Typography: React.FC<TypographyProps> = ({
+  as = 'span',
+  variant = 'body',
+  children,
+}) => {
   const Tag = as;
   return <Tag className={`typography typography-${variant}`}>{children}</Tag>;
 };

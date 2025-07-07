@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -68,8 +68,12 @@ const ClientComponentGrid: React.FC<ClientComponentGridProps> = ({ components })
                 <Button size="icon" className="mb-3 w-10 h-10">
                   {Icon && <Icon className="w-6 h-6" />}
                 </Button>
-                <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">{component.name}</h3>
-                <p className="text-muted-foreground text-xs sm:text-sm mb-2 px-1">{component.description}</p>
+                <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">
+                  {component.name}
+                </h3>
+                <p className="text-muted-foreground text-xs sm:text-sm mb-2 px-1">
+                  {component.description}
+                </p>
                 <div className="w-full mb-2">
                   <CodeBlock code={component.usage} language="tsx" />
                 </div>
