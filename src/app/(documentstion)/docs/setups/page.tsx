@@ -65,6 +65,22 @@ export default function SetupsPage() {
               Read more →
             </Link>
           </div>
+          {/* ESLint */}
+          <div className="rounded-xl border bg-card shadow p-6 flex flex-col gap-2">
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-2xl">🧹</span>
+              <span className="font-semibold">ESLint in Next.js</span>
+            </div>
+            <p className="text-muted-foreground text-sm flex-1">
+              Catch errors and enforce code quality standards in your Next.js project.
+            </p>
+            <Link
+              className="text-primary font-medium hover:underline mt-2"
+              href="/docs/setups/eslint-in-nextjs"
+            >
+              Read more →
+            </Link>
+          </div>
           {/* shadcn/ui */}
           <div className="rounded-xl border bg-card shadow p-6 flex flex-col gap-2">
             <div className="flex items-center gap-2 mb-1">
