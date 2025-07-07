@@ -129,7 +129,7 @@ export default function SetupsPage() {
               Read more →
             </Link>
           </div>
-          
+
           {/* PWA */}
           <div className="rounded-xl border bg-card shadow p-6 flex flex-col gap-2">
             <div className="flex items-center gap-2 mb-1">
