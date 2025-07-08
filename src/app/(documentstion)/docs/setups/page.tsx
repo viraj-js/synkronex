@@ -152,7 +152,8 @@ export default function SetupsPage() {
               <span className="font-semibold">Tailwind CSS in Next.js</span>
             </div>
             <p className="text-muted-foreground text-sm flex-1">
-              Set up Tailwind CSS for utility-first, responsive, and fast styling in your Next.js project.
+              Set up Tailwind CSS for utility-first, responsive, and fast styling in your Next.js
+              project.
             </p>
             <Link
               className="text-primary font-medium hover:underline mt-2"
