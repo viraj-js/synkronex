@@ -27,6 +27,8 @@ export default function SetupsLayout({ children }: { children: React.ReactNode }
       href: '/docs/setups/react-syntax-highlighter-in-nextjs',
       icon: '🟦',
     },
+    { name: 'Babel in Next.js', href: '/docs/setups/babel-in-nextjs', icon: '🟦' },
+    { name: 'Tailwind CSS in Next.js', href: '/docs/setups/tailwindcss-in-nextjs', icon: '🌈' },
   ];
 
   return (

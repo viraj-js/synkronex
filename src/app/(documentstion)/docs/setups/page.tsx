@@ -129,6 +129,38 @@ export default function SetupsPage() {
               Read more →
             </Link>
           </div>
+          {/* Babel */}
+          <div className="rounded-xl border bg-card shadow p-6 flex flex-col gap-2">
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-2xl">🟦</span>
+              <span className="font-semibold">Babel in Next.js</span>
+            </div>
+            <p className="text-muted-foreground text-sm flex-1">
+              Set up Babel for transpiling modern JavaScript to widely supported JavaScript.
+            </p>
+            <Link
+              className="text-primary font-medium hover:underline mt-2"
+              href="/docs/setups/babel-in-nextjs"
+            >
+              Read more →
+            </Link>
+          </div>
+          {/* Tailwind CSS */}
+          <div className="rounded-xl border bg-card shadow p-6 flex flex-col gap-2">
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-2xl">🌈</span>
+              <span className="font-semibold">Tailwind CSS in Next.js</span>
+            </div>
+            <p className="text-muted-foreground text-sm flex-1">
+              Set up Tailwind CSS for utility-first, responsive, and fast styling in your Next.js project.
+            </p>
+            <Link
+              className="text-primary font-medium hover:underline mt-2"
+              href="/docs/setups/tailwindcss-in-nextjs"
+            >
+              Read more →
+            </Link>
+          </div>
 
           {/* PWA */}
           <div className="rounded-xl border bg-card shadow p-6 flex flex-col gap-2">
