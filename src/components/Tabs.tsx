@@ -11,11 +11,7 @@ export const Tabs: React.FC<TabsProps> = ({ tabs, activeTab, onTabChange, vertic
   <div className={`tabs${vertical ? ' tabs-vertical' : ''}`}>
     <div className="tab-list">
       {tabs.map((tab, idx) => (
-        <button
-          key={tab.label}
-          className={`tab${activeTab === idx ? ' tab-active' : ''}`}
-          onClick={() => onTabChange(idx)}
-        >
+        <button key={tab.label} className={`tab${activeTab === idx ? ' tab-active' : ''}`} onClick={() => onTabChange(idx)}>
           {tab.label}
         </button>
       ))}

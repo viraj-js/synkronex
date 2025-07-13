@@ -19,9 +19,7 @@ const page = () => {
           {gettingStartedContent.hero.badge}
         </Badge>
         <h1 className="text-4xl font-bold mb-4">{gettingStartedContent.hero.title}</h1>
-        <p className="text-muted-foreground text-lg mb-6">
-          {gettingStartedContent.hero.description}
-        </p>
+        <p className="text-muted-foreground text-lg mb-6">{gettingStartedContent.hero.description}</p>
       </section>
       <section className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
         {gettingStartedContent.steps.map((step, idx) => {

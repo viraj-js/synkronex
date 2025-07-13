@@ -50,11 +50,7 @@ const ClientComponentGrid: React.FC<ClientComponentGridProps> = ({ components })
     }
   };
 
-  const filteredComponents = components.filter(
-    (component) =>
-      component.name.toLowerCase().includes(query.toLowerCase()) ||
-      component.description.toLowerCase().includes(query.toLowerCase())
-  );
+  const filteredComponents = components.filter((component) => component.name.toLowerCase().includes(query.toLowerCase()) || component.description.toLowerCase().includes(query.toLowerCase()));
 
   return (
     <>
@@ -68,21 +64,12 @@ const ClientComponentGrid: React.FC<ClientComponentGridProps> = ({ components })
                 <Button size="icon" className="mb-3 w-10 h-10">
                   {Icon && <Icon className="w-6 h-6" />}
                 </Button>
-                <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">
-                  {component.name}
-                </h3>
-                <p className="text-muted-foreground text-xs sm:text-sm mb-2 px-1">
-                  {component.description}
-                </p>
+                <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">{component.name}</h3>
+                <p className="text-muted-foreground text-xs sm:text-sm mb-2 px-1">{component.description}</p>
                 <div className="w-full mb-2">
                   <CodeBlock code={component.usage} language="tsx" />
                 </div>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="mt-1"
-                  onClick={() => handleViewCode(component.name)}
-                >
+                <Button variant="outline" size="sm" className="mt-1" onClick={() => handleViewCode(component.name)}>
                   View Code
                 </Button>
               </CardContent>
@@ -90,12 +77,7 @@ const ClientComponentGrid: React.FC<ClientComponentGridProps> = ({ components })
           );
         })}
       </section>
-      <ViewCodeModal
-        open={viewCodeOpen}
-        onClose={() => setViewCodeOpen(false)}
-        code={loading ? (error ? error : 'Loading...') : code}
-        filename={filename}
-      />
+      <ViewCodeModal open={viewCodeOpen} onClose={() => setViewCodeOpen(false)} code={loading ? (error ? error : 'Loading...') : code} filename={filename} />
     </>
   );
 };

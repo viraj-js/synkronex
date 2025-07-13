@@ -35,10 +35,7 @@ export default function SetupsLayout({ children }: { children: React.ReactNode }
     <div className="flex min-h-screen">
       {/* Sidebar */}
       <aside className="hidden md:flex flex-col w-64 border-r bg-background/90 p-4">
-        <Link
-          href="/docs"
-          className="mb-6 flex items-center gap-2 text-primary hover:underline font-semibold text-base"
-        >
+        <Link href="/docs" className="mb-6 flex items-center gap-2 text-primary hover:underline font-semibold text-base">
           ← Back to Docs
         </Link>
         <h2 className="font-bold text-lg mb-4">Setup Topics</h2>
@@ -48,9 +45,7 @@ export default function SetupsLayout({ children }: { children: React.ReactNode }
               key={link.href}
               href={link.href}
               className={`flex items-center gap-2 px-3 py-2 rounded transition-colors font-medium text-sm ${
-                pathname === link.href
-                  ? 'bg-primary text-primary-foreground shadow'
-                  : 'text-muted-foreground hover:bg-accent hover:text-accent-foreground'
+                pathname === link.href ? 'bg-primary text-primary-foreground shadow' : 'text-muted-foreground hover:bg-accent hover:text-accent-foreground'
               }`}
             >
               <span>{link.icon}</span>
@@ -60,21 +55,13 @@ export default function SetupsLayout({ children }: { children: React.ReactNode }
         </nav>
       </aside>
       {/* Mobile sidebar toggle */}
-      <button
-        className="md:hidden fixed top-4 left-4 z-40 bg-background border rounded p-2 shadow"
-        onClick={() => setSidebarOpen(!sidebarOpen)}
-        aria-label="Toggle sidebar"
-      >
+      <button className="md:hidden fixed top-4 left-4 z-40 bg-background border rounded p-2 shadow" onClick={() => setSidebarOpen(!sidebarOpen)} aria-label="Toggle sidebar">
         ☰
       </button>
       {/* Mobile sidebar drawer */}
       {sidebarOpen && (
         <aside className="fixed z-50 top-0 left-0 w-64 h-full bg-background border-r p-4 flex flex-col">
-          <button
-            className="self-end mb-4 text-lg"
-            onClick={() => setSidebarOpen(false)}
-            aria-label="Close sidebar"
-          >
+          <button className="self-end mb-4 text-lg" onClick={() => setSidebarOpen(false)} aria-label="Close sidebar">
             ×
           </button>
           <h2 className="font-bold text-lg mb-4">Setup Topics</h2>
@@ -84,9 +71,7 @@ export default function SetupsLayout({ children }: { children: React.ReactNode }
                 key={link.href}
                 href={link.href}
                 className={`px-3 py-2 rounded transition-colors font-medium text-sm ${
-                  pathname === link.href
-                    ? 'bg-primary text-primary-foreground shadow'
-                    : 'text-muted-foreground hover:bg-accent hover:text-accent-foreground'
+                  pathname === link.href ? 'bg-primary text-primary-foreground shadow' : 'text-muted-foreground hover:bg-accent hover:text-accent-foreground'
                 }`}
                 onClick={() => setSidebarOpen(false)}
               >

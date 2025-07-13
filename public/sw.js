@@ -165,10 +165,7 @@ define(['./workbox-4754cb34'], function (e) {
         cacheName: 'start-url',
         plugins: [
           {
-            cacheWillUpdate: async ({ request: e, response: s, event: t, state: c }) =>
-              s && 'opaqueredirect' === s.type
-                ? new Response(s.body, { status: 200, statusText: 'OK', headers: s.headers })
-                : s,
+            cacheWillUpdate: async ({ request: e, response: s, event: t, state: c }) => (s && 'opaqueredirect' === s.type ? new Response(s.body, { status: 200, statusText: 'OK', headers: s.headers }) : s),
           },
         ],
       }),
@@ -218,10 +215,7 @@ define(['./workbox-4754cb34'], function (e) {
       /\.(?:mp3|wav|ogg)$/i,
       new e.CacheFirst({
         cacheName: 'static-audio-assets',
-        plugins: [
-          new e.RangeRequestsPlugin(),
-          new e.ExpirationPlugin({ maxEntries: 32, maxAgeSeconds: 86400 }),
-        ],
+        plugins: [new e.RangeRequestsPlugin(), new e.ExpirationPlugin({ maxEntries: 32, maxAgeSeconds: 86400 })],
       }),
       'GET'
     ),
@@ -229,10 +223,7 @@ define(['./workbox-4754cb34'], function (e) {
       /\.(?:mp4)$/i,
       new e.CacheFirst({
         cacheName: 'static-video-assets',
-        plugins: [
-          new e.RangeRequestsPlugin(),
-          new e.ExpirationPlugin({ maxEntries: 32, maxAgeSeconds: 86400 }),
-        ],
+        plugins: [new e.RangeRequestsPlugin(), new e.ExpirationPlugin({ maxEntries: 32, maxAgeSeconds: 86400 })],
       }),
       'GET'
     ),

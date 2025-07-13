@@ -2,8 +2,7 @@ const componentsContent = {
   hero: {
     badge: 'UI Components',
     title: 'Synkronex UI Components',
-    description:
-      'Explore the reusable UI components that power Synkronex. Each component is customizable, accessible, and built for modern web apps.',
+    description: 'Explore the reusable UI components that power Synkronex. Each component is customizable, accessible, and built for modern web apps.',
   },
   components: [
     {

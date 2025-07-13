@@ -1,28 +1,11 @@
-import {
-  Code,
-  Users,
-  CheckCircle,
-  Rocket,
-  GitBranch,
-  Coffee,
-  Zap,
-  Shield,
-  Database,
-  Palette,
-  MessageCircle,
-  FileText,
-  Settings,
-  Bug,
-  Lightbulb,
-} from 'lucide-react';
+import { Code, Users, CheckCircle, Rocket, GitBranch, Coffee, Zap, Shield, Database, Palette, MessageCircle, FileText, Settings, Bug, Lightbulb } from 'lucide-react';
 
 export const content = {
   hero: {
     badge: 'Open Source Project',
     title: 'Synkronex',
     subtitle: 'Collaborative Task Management',
-    description:
-      'An open-source, modern task management application built with Next.js, TypeScript, and cutting-edge web technologies. Join our community of developers building the future of productivity tools.',
+    description: 'An open-source, modern task management application built with Next.js, TypeScript, and cutting-edge web technologies. Join our community of developers building the future of productivity tools.',
     buttons: {
       getStarted: 'Start Contributing',
       github: 'View Repository',
