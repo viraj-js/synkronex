@@ -11,11 +11,7 @@ const Footer = () => (
       </div>
       <div className="flex items-center gap-4">
         {footerContent.links.map((link, idx) => (
-          <Link
-            key={idx}
-            href={link.href}
-            className="hover:text-primary transition-colors flex items-center gap-1"
-          >
+          <Link key={idx} href={link.href} className="hover:text-primary transition-colors flex items-center gap-1">
             {link.label}
           </Link>
         ))}

@@ -16,25 +16,18 @@ export default function EslintInNextjsPage() {
           </Badge>
           <span className="text-muted-foreground text-sm">ESLint + Next.js</span>
         </div>
-        <h1 className="text-3xl font-bold mb-2 flex items-center gap-2">
-          🧹 Enforce Code Quality with ESLint
-        </h1>
+        <h1 className="text-3xl font-bold mb-2 flex items-center gap-2">🧹 Enforce Code Quality with ESLint</h1>
         <p className="mb-6 text-muted-foreground">
-          <strong>ESLint</strong> is a powerful tool for identifying and fixing problems in your
-          JavaScript/TypeScript code. It helps enforce coding standards, catch bugs early, and
-          improve overall code quality and maintainability in your Next.js project.
+          <strong>ESLint</strong> is a powerful tool for identifying and fixing problems in your JavaScript/TypeScript code. It helps enforce coding standards, catch bugs early, and improve overall code quality and
+          maintainability in your Next.js project.
         </p>
         <div className="mb-4">
           <h2 className="text-xl font-semibold mb-2">Setup Steps (Flat Config for ESLint v9+)</h2>
           <ul className="list-decimal ml-6 space-y-4 text-base">
             <li>
               <strong>Install ESLint and dependencies:</strong>
-              <CodeBlock
-                language="bash"
-                code={`npm install --save-dev eslint @eslint/eslintrc eslint-config-next`}
-              />
-              Installs ESLint, the compatibility helper for flat config, and Next.js's recommended
-              config.
+              <CodeBlock language="bash" code={`npm install --save-dev eslint @eslint/eslintrc eslint-config-next`} />
+              Installs ESLint, the compatibility helper for flat config, and Next.js's recommended config.
             </li>
             <li>
               <strong>
@@ -81,8 +74,7 @@ export default eslintConfig;
               />
               <ul className="list-disc ml-6 mt-2 space-y-1 text-muted-foreground text-sm">
                 <li>
-                  <code>"lint": "next lint"</code> — Runs ESLint with Next.js integration, checking
-                  all files for linting errors.
+                  <code>"lint": "next lint"</code> — Runs ESLint with Next.js integration, checking all files for linting errors.
                 </li>
               </ul>
             </li>
@@ -132,19 +124,12 @@ export default eslintConfig;
               <CodeBlock language="javascript" code={`import { fileURLToPath } from 'url';`} />
             </div>
             <div>
-              Import the compatibility helper that allows using old-style configs with the new flat
-              config:
-              <CodeBlock
-                language="javascript"
-                code={`import { FlatCompat } from '@eslint/eslintrc';`}
-              />
+              Import the compatibility helper that allows using old-style configs with the new flat config:
+              <CodeBlock language="javascript" code={`import { FlatCompat } from '@eslint/eslintrc';`} />
             </div>
             <div>
               Gets the absolute path of the current config file:
-              <CodeBlock
-                language="javascript"
-                code={`const __filename = fileURLToPath(import.meta.url);`}
-              />
+              <CodeBlock language="javascript" code={`const __filename = fileURLToPath(import.meta.url);`} />
             </div>
             <div>
               Gets the directory name of the config file:
@@ -152,25 +137,15 @@ export default eslintConfig;
             </div>
             <div>
               Creates a FlatCompat instance, telling it where to resolve configs from:
-              <CodeBlock
-                language="javascript"
-                code={`const compat = new FlatCompat({ baseDirectory: __dirname });`}
-              />
+              <CodeBlock language="javascript" code={`const compat = new FlatCompat({ baseDirectory: __dirname });`} />
             </div>
             <div>
               Loads Next.js and TypeScript recommended configs using the compatibility helper:
-              <CodeBlock
-                language="javascript"
-                code={`...compat.extends('next/core-web-vitals', 'next/typescript')`}
-              />
+              <CodeBlock language="javascript" code={`...compat.extends('next/core-web-vitals', 'next/typescript')`} />
             </div>
             <div>
-              Example of overriding a specific lint rule (here, disabling a React warning about
-              unescaped entities):
-              <CodeBlock
-                language="javascript"
-                code={`rules: { 'react/no-unescaped-entities': 'off' }`}
-              />
+              Example of overriding a specific lint rule (here, disabling a React warning about unescaped entities):
+              <CodeBlock language="javascript" code={`rules: { 'react/no-unescaped-entities': 'off' }`} />
             </div>
             <div>
               Exports the config for ESLint to use:
@@ -182,20 +157,16 @@ export default eslintConfig;
           <h2 className="text-xl font-semibold mb-2">Why Use Flat Config?</h2>
           <ul className="list-disc ml-6 space-y-2 text-muted-foreground text-base">
             <li>
-              <strong>Required for ESLint v9+:</strong> The new flat config format is now the
-              recommended way to configure ESLint.
+              <strong>Required for ESLint v9+:</strong> The new flat config format is now the recommended way to configure ESLint.
             </li>
             <li>
-              <strong>More flexible and powerful:</strong> Supports JavaScript/ESM, dynamic config,
-              and modern workflows.
+              <strong>More flexible and powerful:</strong> Supports JavaScript/ESM, dynamic config, and modern workflows.
             </li>
             <li>
-              <strong>FlatCompat bridges the gap:</strong> Lets you use existing configs/plugins
-              while the ecosystem migrates from .eslintrc to flat config.
+              <strong>FlatCompat bridges the gap:</strong> Lets you use existing configs/plugins while the ecosystem migrates from .eslintrc to flat config.
             </li>
             <li>
-              <strong>Still supports all Next.js rules:</strong> You get all the benefits of
-              Next.js's recommended linting, just in a modern format.
+              <strong>Still supports all Next.js rules:</strong> You get all the benefits of Next.js's recommended linting, just in a modern format.
             </li>
           </ul>
         </div>
@@ -213,12 +184,8 @@ export default eslintConfig;
             <tbody>
               <tr className="border-b">
                 <td className="py-2 px-3">Purpose</td>
-                <td className="py-2 px-3">
-                  Finds code errors, enforces best practices, can auto-fix some issues
-                </td>
-                <td className="py-2 px-3">
-                  Formats code for consistent style (spaces, quotes, etc.)
-                </td>
+                <td className="py-2 px-3">Finds code errors, enforces best practices, can auto-fix some issues</td>
+                <td className="py-2 px-3">Formats code for consistent style (spaces, quotes, etc.)</td>
               </tr>
               <tr className="border-b">
                 <td className="py-2 px-3">Checks for bugs</td>
@@ -237,18 +204,14 @@ export default eslintConfig;
               </tr>
               <tr>
                 <td className="py-2 px-3">Recommended Usage</td>
-                <td className="py-2 px-3">
-                  Use for code quality, best practices, and error catching
-                </td>
+                <td className="py-2 px-3">Use for code quality, best practices, and error catching</td>
                 <td className="py-2 px-3">Use for code style and formatting</td>
               </tr>
             </tbody>
           </table>
           <p className="text-muted-foreground text-base">
-            <strong>Use both ESLint and Prettier together</strong> for best results: ESLint for code
-            quality and correctness, Prettier for consistent code formatting. You can configure
-            ESLint to work alongside Prettier using <code>eslint-config-prettier</code> to avoid
-            rule conflicts.
+            <strong>Use both ESLint and Prettier together</strong> for best results: ESLint for code quality and correctness, Prettier for consistent code formatting. You can configure ESLint to work alongside Prettier
+            using <code>eslint-config-prettier</code> to avoid rule conflicts.
           </p>
         </div>
         <div className="mb-4">
@@ -257,12 +220,9 @@ export default eslintConfig;
             <li>
               Run <code>npm run lint</code> before pushing code to catch errors early.
             </li>
+            <li>Integrate ESLint in your CI pipeline (e.g., GitHub Actions) for automated code checks.</li>
             <li>
-              Integrate ESLint in your CI pipeline (e.g., GitHub Actions) for automated code checks.
-            </li>
-            <li>
-              Use <code>eslint-config-prettier</code> if you want to combine Prettier and ESLint
-              without conflicts.
+              Use <code>eslint-config-prettier</code> if you want to combine Prettier and ESLint without conflicts.
             </li>
             <li>Keep your ESLint and Prettier configs up to date with project needs.</li>
           </ul>

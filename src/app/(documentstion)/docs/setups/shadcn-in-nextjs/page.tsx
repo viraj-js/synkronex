@@ -24,9 +24,7 @@ interface Guide {
 }
 
 function isStepDetailLink(detail: string | StepDetailLink): detail is StepDetailLink {
-  return (
-    typeof detail === 'object' && detail !== null && 'type' in detail && detail.type === 'link'
-  );
+  return typeof detail === 'object' && detail !== null && 'type' in detail && detail.type === 'link';
 }
 
 export default function ShadcnInNextjsPage() {
@@ -39,9 +37,8 @@ export default function ShadcnInNextjsPage() {
       <div className="mb-6">
         <h2 className="text-xl font-semibold mb-2">What is shadcn/ui and why use it?</h2>
         <p className="text-muted-foreground mb-2">
-          <strong>shadcn/ui</strong> is a collection of beautifully designed, accessible, and
-          customizable React components built with Tailwind CSS. It enables you to rapidly build
-          modern UIs for your Next.js app with best practices for accessibility and styling.
+          <strong>shadcn/ui</strong> is a collection of beautifully designed, accessible, and customizable React components built with Tailwind CSS. It enables you to rapidly build modern UIs for your Next.js app with
+          best practices for accessibility and styling.
         </p>
         <ul className="list-disc ml-6 space-y-2 text-muted-foreground">
           <li>Provides ready-to-use, themeable components</li>
@@ -54,20 +51,16 @@ export default function ShadcnInNextjsPage() {
         <h2 className="text-xl font-semibold mb-2">What does each setup step do?</h2>
         <ul className="list-disc ml-6 space-y-2 text-muted-foreground">
           <li>
-            <strong>Install shadcn/ui CLI and dependencies:</strong> Sets up the CLI tool and
-            required packages to generate and manage UI components.
+            <strong>Install shadcn/ui CLI and dependencies:</strong> Sets up the CLI tool and required packages to generate and manage UI components.
           </li>
           <li>
-            <strong>Initialize shadcn/ui:</strong> Configures your project for shadcn/ui usage,
-            including Tailwind CSS integration and component directory setup.
+            <strong>Initialize shadcn/ui:</strong> Configures your project for shadcn/ui usage, including Tailwind CSS integration and component directory setup.
           </li>
           <li>
-            <strong>Add components:</strong> Use the CLI to add components (e.g., Button, Card) to
-            your project, ready for customization.
+            <strong>Add components:</strong> Use the CLI to add components (e.g., Button, Card) to your project, ready for customization.
           </li>
           <li>
-            <strong>Customize and use:</strong> Edit the generated components as needed and use them
-            in your Next.js pages and apps.
+            <strong>Customize and use:</strong> Edit the generated components as needed and use them in your Next.js pages and apps.
           </li>
         </ul>
       </div>

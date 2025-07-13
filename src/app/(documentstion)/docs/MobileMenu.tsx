@@ -20,10 +20,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
   }, [pathName]);
 
   return (
-    <div
-      className={`md:hidden w-full overflow-hidden transition-all duration-300 ${open ? 'max-h-96 py-2' : 'max-h-0 py-0'}`}
-      aria-hidden={!open}
-    >
+    <div className={`md:hidden w-full overflow-hidden transition-all duration-300 ${open ? 'max-h-96 py-2' : 'max-h-0 py-0'}`} aria-hidden={!open}>
       <nav className="w-full bg-background shadow-md flex flex-col gap-2 px-4">
         {documentationNavigation.map((item) => {
           const isActive = pathName === item.href;

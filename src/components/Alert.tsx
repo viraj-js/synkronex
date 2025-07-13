@@ -5,6 +5,4 @@ export interface AlertProps {
   children: React.ReactNode;
 }
 
-export const Alert: React.FC<AlertProps> = ({ type = 'info', children }) => (
-  <div className={`alert alert-${type}`}>{children}</div>
-);
+export const Alert: React.FC<AlertProps> = ({ type = 'info', children }) => <div className={`alert alert-${type}`}>{children}</div>;

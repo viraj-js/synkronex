@@ -2,8 +2,7 @@ const apiReferenceContent = {
   hero: {
     badge: 'API Reference',
     title: 'Synkronex API Reference',
-    description:
-      'Explore the REST API endpoints for integrating with Synkronex. Find details on routes, parameters, and response formats below.',
+    description: 'Explore the REST API endpoints for integrating with Synkronex. Find details on routes, parameters, and response formats below.',
   },
   endpoints: [
     {

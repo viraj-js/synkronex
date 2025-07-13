@@ -3,8 +3,7 @@ const homeContent = {
     title: 'Welcome to Synkronex',
     subtitle: 'The modern open-source project management system.',
     badge: 'Open Source',
-    description:
-      'Synkronex is your all-in-one solution for project management, collaboration, and productivity.',
+    description: 'Synkronex is your all-in-one solution for project management, collaboration, and productivity.',
     buttons: {
       getStarted: 'Get Started',
       github: 'GitHub',

@@ -2,8 +2,7 @@ const gettingStartedContent = {
   hero: {
     badge: 'Getting Started',
     title: 'Getting Started with Synkronex',
-    description:
-      'Follow these steps to set up Synkronex and start managing your projects in minutes.',
+    description: 'Follow these steps to set up Synkronex and start managing your projects in minutes.',
   },
   steps: [
     {

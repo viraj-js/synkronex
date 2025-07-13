@@ -10,12 +10,8 @@ const page = () => {
         <Badge variant="secondary" className="mb-3 text-xs px-2 py-1">
           {componentsContent.hero.badge}
         </Badge>
-        <h1 className="text-2xl sm:text-4xl font-bold mb-3 leading-tight">
-          {componentsContent.hero.title}
-        </h1>
-        <p className="text-muted-foreground text-base sm:text-lg mb-5 px-1">
-          {componentsContent.hero.description}
-        </p>
+        <h1 className="text-2xl sm:text-4xl font-bold mb-3 leading-tight">{componentsContent.hero.title}</h1>
+        <p className="text-muted-foreground text-base sm:text-lg mb-5 px-1">{componentsContent.hero.description}</p>
       </section>
       <ClientComponentGrid components={componentsContent.components} />
     </main>

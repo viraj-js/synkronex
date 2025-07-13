@@ -18,46 +18,34 @@ export default function GithubActionsInNextjsPage() {
             </Badge>
             <span className="text-muted-foreground text-sm">GitHub Actions + Next.js</span>
           </div>
-          <h1 className="text-3xl font-bold mb-2 flex items-center gap-2">
-            🤖 Automate Next.js with GitHub Actions
-          </h1>
+          <h1 className="text-3xl font-bold mb-2 flex items-center gap-2">🤖 Automate Next.js with GitHub Actions</h1>
           <p className="mb-6 text-muted-foreground">
-            <strong>GitHub Actions</strong> is a powerful automation platform built into GitHub. It
-            lets you run scripts on every push or pull request—perfect for testing, linting,
-            building, and deploying your Next.js app automatically.
+            <strong>GitHub Actions</strong> is a powerful automation platform built into GitHub. It lets you run scripts on every push or pull request—perfect for testing, linting, building, and deploying your Next.js
+            app automatically.
           </p>
           <div className="mb-4">
             <h2 className="text-xl font-semibold mb-2">What does each workflow step do?</h2>
             <ul className="list-disc ml-6 space-y-2 text-muted-foreground">
               <li>
-                <strong>Checkout repository</strong>: Uses <code>actions/checkout@v4</code> to clone
-                your code into the CI environment.
+                <strong>Checkout repository</strong>: Uses <code>actions/checkout@v4</code> to clone your code into the CI environment.
               </li>
               <li>
-                <strong>Set up Node.js</strong>: Uses <code>actions/setup-node@v4</code> to specify
-                the Node.js version (e.g., 20) for your workflow.
+                <strong>Set up Node.js</strong>: Uses <code>actions/setup-node@v4</code> to specify the Node.js version (e.g., 20) for your workflow.
               </li>
               <li>
-                <strong>Install dependencies</strong>: Runs <code>npm ci</code> for a clean,
-                reproducible install using your <code>package-lock.json</code>.
+                <strong>Install dependencies</strong>: Runs <code>npm ci</code> for a clean, reproducible install using your <code>package-lock.json</code>.
               </li>
               <li>
-                <strong>Lint</strong>: Runs <code>npm run lint</code> to check code style and catch
-                errors. <code>|| true</code> allows the workflow to continue even if lint fails
-                (optional).
+                <strong>Lint</strong>: Runs <code>npm run lint</code> to check code style and catch errors. <code>|| true</code> allows the workflow to continue even if lint fails (optional).
               </li>
               <li>
-                <strong>Build</strong>: Runs <code>npm run build</code> to build your Next.js app,
-                ensuring it compiles successfully.
+                <strong>Build</strong>: Runs <code>npm run build</code> to build your Next.js app, ensuring it compiles successfully.
               </li>
               <li>
-                <strong>Run tests</strong>: Runs <code>npm test -- --coverage</code> to execute your
-                test suite and collect code coverage.
+                <strong>Run tests</strong>: Runs <code>npm test -- --coverage</code> to execute your test suite and collect code coverage.
               </li>
               <li>
-                <strong>Upload coverage report</strong>: Uses{' '}
-                <code>actions/upload-artifact@v4</code> to save the coverage report as an artifact
-                you can download from the workflow run.
+                <strong>Upload coverage report</strong>: Uses <code>actions/upload-artifact@v4</code> to save the coverage report as an artifact you can download from the workflow run.
               </li>
             </ul>
           </div>
@@ -134,19 +122,16 @@ jobs:
           </div>
           <ul className="list-disc ml-6 space-y-2 text-muted-foreground">
             <li>
-              <strong>Checkout repository</strong>: Uses <code>actions/checkout</code> to fetch your
-              code.
+              <strong>Checkout repository</strong>: Uses <code>actions/checkout</code> to fetch your code.
             </li>
             <li>
               <strong>Set up Node.js</strong>: Installs Node.js 20 for a consistent environment.
             </li>
             <li>
-              <strong>Install dependencies</strong>: Runs <code>npm ci</code> for a clean, fast
-              install.
+              <strong>Install dependencies</strong>: Runs <code>npm ci</code> for a clean, fast install.
             </li>
             <li>
-              <strong>Lint</strong>: Runs <code>npm run lint</code> (won&apos;t fail the build if
-              lint fails, but you can remove <code>&quot;|| true&quot;</code> to enforce it).
+              <strong>Lint</strong>: Runs <code>npm run lint</code> (won&apos;t fail the build if lint fails, but you can remove <code>&quot;|| true&quot;</code> to enforce it).
             </li>
             <li>
               <strong>Build</strong>: Compiles your Next.js app in production mode.
@@ -155,8 +140,7 @@ jobs:
               <strong>Run tests</strong>: Executes all your Jest tests and collects coverage.
             </li>
             <li>
-              <strong>Upload coverage report</strong>: Saves the coverage results as a downloadable
-              artifact.
+              <strong>Upload coverage report</strong>: Saves the coverage results as a downloadable artifact.
             </li>
           </ul>
         </CardContent>

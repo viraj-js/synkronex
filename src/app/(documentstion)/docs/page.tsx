@@ -23,15 +23,9 @@ export default function TaskManagerDocs() {
             <Heart className="w-3 h-3 mr-1 text-red-500" />
             {content.hero.badge}
           </Badge>
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent break-words">
-            {content.hero.title}
-          </h1>
-          <p className="text-lg sm:text-2xl md:text-3xl font-semibold mb-6 text-muted-foreground">
-            {content.hero.subtitle}
-          </p>
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            {content.hero.description}
-          </p>
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent break-words">{content.hero.title}</h1>
+          <p className="text-lg sm:text-2xl md:text-3xl font-semibold mb-6 text-muted-foreground">{content.hero.subtitle}</p>
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">{content.hero.description}</p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 mb-8">
             <Button size="lg" className="group bg-blue-600 hover:bg-blue-700">
@@ -74,15 +68,10 @@ export default function TaskManagerDocs() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
           {content.quickStart.steps.map((step, index) => (
-            <Card
-              key={index}
-              className="relative group hover:shadow-lg transition-all duration-300"
-            >
+            <Card key={index} className="relative group hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
-                    {index + 1}
-                  </div>
+                  <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">{index + 1}</div>
                   <h3 className="font-semibold text-lg">{step.title}</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">{step.description}</p>
@@ -107,17 +96,11 @@ export default function TaskManagerDocs() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {content.techStack.technologies.map((tech, index) => (
-              <Card
-                key={index}
-                className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              >
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="font-semibold text-lg">{tech.name}</h3>
-                    <Badge
-                      variant="outline"
-                      className={`text-${tech.color}-600 border-${tech.color}-200`}
-                    >
+                    <Badge variant="outline" className={`text-${tech.color}-600 border-${tech.color}-200`}>
                       {tech.category}
                     </Badge>
                   </div>
@@ -140,15 +123,10 @@ export default function TaskManagerDocs() {
           {content.features.items.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <Card
-                key={index}
-                className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              >
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div
-                      className={`p-3 bg-${feature.color}-100 rounded-lg group-hover:bg-${feature.color}-200 transition-colors`}
-                    >
+                    <div className={`p-3 bg-${feature.color}-100 rounded-lg group-hover:bg-${feature.color}-200 transition-colors`}>
                       <Icon className={`w-6 h-6 text-${feature.color}-600`} />
                     </div>
                     <h3 className="font-semibold text-lg">{feature.title}</h3>
@@ -173,15 +151,10 @@ export default function TaskManagerDocs() {
             {content.contribute.ways.map((way, index) => {
               const Icon = way.icon;
               return (
-                <Card
-                  key={index}
-                  className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                >
+                <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-3 mb-4">
-                      <div
-                        className={`p-3 bg-${way.color}-100 rounded-lg group-hover:bg-${way.color}-200 transition-colors`}
-                      >
+                      <div className={`p-3 bg-${way.color}-100 rounded-lg group-hover:bg-${way.color}-200 transition-colors`}>
                         <Icon className={`w-6 h-6 text-${way.color}-600`} />
                       </div>
                       <h3 className="font-semibold text-lg">{way.title}</h3>
@@ -214,10 +187,7 @@ export default function TaskManagerDocs() {
           {content.resources.items.map((resource, index) => {
             const Icon = resource.icon;
             return (
-              <Card
-                key={index}
-                className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer"
-              >
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors">
@@ -244,15 +214,10 @@ export default function TaskManagerDocs() {
             {content.community.platforms.map((platform, index) => {
               const Icon = platform.icon;
               return (
-                <Card
-                  key={index}
-                  className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                >
+                <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6 h-full flex flex-col items-center text-center">
                     <div className="flex justify-center mb-4">
-                      <div
-                        className={`p-4 bg-${platform.color}-100 rounded-full group-hover:bg-${platform.color}-200 transition-colors`}
-                      >
+                      <div className={`p-4 bg-${platform.color}-100 rounded-full group-hover:bg-${platform.color}-200 transition-colors`}>
                         <Icon className={`w-6 h-6 text-${platform.color}-600`} />
                       </div>
                     </div>

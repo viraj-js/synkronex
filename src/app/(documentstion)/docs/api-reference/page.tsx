@@ -39,10 +39,7 @@ const page = () => {
                   <tr key={idx}>
                     <td className="font-mono">{ep.path}</td>
                     <td>
-                      <Badge
-                        variant="outline"
-                        className={methodColorMap[ep.method as keyof typeof methodColorMap] || ''}
-                      >
+                      <Badge variant="outline" className={methodColorMap[ep.method as keyof typeof methodColorMap] || ''}>
                         {ep.method}
                       </Badge>
                     </td>
@@ -54,11 +51,7 @@ const page = () => {
             <div className="text-xs text-muted-foreground mt-4">
               For full details, see the{' '}
               <Button variant="link" size="sm" asChild>
-                <a
-                  href="https://github.com/viraj-js/synkronex#api"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/viraj-js/synkronex#api" target="_blank" rel="noopener noreferrer">
                   API Docs <ExternalLink className="w-3 h-3 inline ml-1" />
                 </a>
               </Button>
