@@ -82,6 +82,7 @@ export default function HuskyInNextjsPage() {
             </Badge>
             <span className="text-muted-foreground text-sm">Initialize Husky</span>
           </div>
+          <p className="mb-2">Run the following command to set up Husky: If someone clones the repo then also need to need this command seprately then npm install</p>
           <CodeBlock code="npx husky install" language="bash" />
           <p className="text-xs text-muted-foreground mt-2">
             This creates a <code>.husky/</code> directory in your project root.
