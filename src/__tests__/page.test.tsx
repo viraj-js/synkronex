@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import TaskManagerDocs from '../page';
+import TaskManagerDocs from '../app/page';
 
 describe('TaskManagerDocs page', () => {
   it('renders hero section', () => {
