@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { BookOpen, Github } from 'lucide-react';
 import { ThemeToggle } from '@/components/theme/theme-toggle';
+import Link from 'next/link';
 
 const Page = () => {
   return (
@@ -33,6 +34,15 @@ const Page = () => {
           </div>
         </CardContent>
       </Card>
+      <div className="navigation">
+        <Link href="/sign-up" className="absolute top-4 left-4 text-sm text-muted-foreground dark:text-[#b0b8c9] hover:underline">
+          ← Register/Login
+        </Link>
+      </div>
+      <div className="absolute bottom-4 text-sm text-muted-foreground dark:text-[#b0b8c9]">
+        <p>© {new Date().getFullYear()} Synchronex. All rights reserved.</p>
+        <p>Built with ❤️ using Next.js and React.</p>
+      </div>
     </div>
   );
 };
